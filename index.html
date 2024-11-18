@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Financial Advisor for Rural India</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">AI FinAdvisor</div>
+        <div class="hamburger-menu">☰</div>
+
+        <ul>
+          <li><a href="#home" class="section">Home</a></li>
+          <li>
+            <a href="#features" class="section">Features</a>
+          </li>
+          <li>
+            <a href="#about" class="section">About Us</a>
+          </li>
+          <li>
+            <a href="#contact" class="section">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <button onclick="openLanguageModal()" style="margin-top: 20px">
+          🎙️Start Voice Interaction
+        </button>
+
+        <h1 id="dynamic-title">AI Financial Advisor</h1>
+        <p class="text">
+          Empowering rural India with AI-driven financial guidance
+        </p>
+      </section>
+
+      <section id="features">
+        <h2>Key Features</h2>
+        <div class="feature-timeline">
+          <div class="timeline-line"></div>
+          <div class="feature-card left" id="voice-activation">
+            <div class="timeline-dot"></div>
+            <lottie-player
+              src="https://assets2.lottiefiles.com/packages/lf20_xt3zjwah.json"
+              background="transparent"
+              speed="1"
+              style="width: 100%; height: 200px"
+              loop
+              autoplay
+            ></lottie-player>
+            <h3>Voice Activation</h3>
+            <p>
+              Control the entire platform through voice commands for easy access
+              and navigation.
+            </p>
+          </div>
+          <div class="feature-card right" id="community">
+            <div class="timeline-dot"></div>
+            <lottie-player
+              src="https://assets9.lottiefiles.com/packages/lf20_2wrjlrbz.json"
+              background="transparent"
+              speed="1"
+              style="width: 100%; height: 200px"
+              loop
+              autoplay
+            ></lottie-player>
+            <h3>Community & Mentorship</h3>
+            <p>
+              Connect with mentors and access personalized financial guidance.
+            </p>
+          </div>
+          <div class="feature-card left" id="learning">
+            <div class="timeline-dot"></div>
+            <lottie-player
+              src="https://assets5.lottiefiles.com/packages/lf20_swnrn2oy.json"
+              background="transparent"
+              speed="1"
+              style="width: 100%; height: 200px"
+              loop
+              autoplay
+            ></lottie-player>
+            <h3>Learning Platform</h3>
+            <p>
+              Assess your financial knowledge and access tailored educational
+              content.
+            </p>
+          </div>
+          <div class="feature-card right" id="news">
+            <div class="timeline-dot"></div>
+            <lottie-player
+              src="https://assets3.lottiefiles.com/packages/lf20_qmfs6c3i.json"
+              background="transparent"
+              speed="1"
+              style="width: 100%; height: 200px"
+              loop
+              autoplay
+            ></lottie-player>
+            <h3>News & Alerts</h3>
+            <p>
+              Stay informed with tailored financial news and important alerts.
+            </p>
+          </div>
+          <div class="feature-card left" id="entrepreneur">
+            <div class="timeline-dot"></div>
+            <lottie-player
+              src="https://assets10.lottiefiles.com/packages/lf20_vvx2gjpt.json"
+              background="transparent"
+              speed="1"
+              style="width: 100%; height: 200px"
+              loop
+              autoplay
+            ></lottie-player>
+            <h3>Entrepreneur Journey</h3>
+            <p>
+              Follow a guided path to grow your business with gamified rewards.
+            </p>
+          </div>
+          <div class="feature-card right" id="ai-assistant">
+            <div class="timeline-dot"></div>
+            <lottie-player
+              src="https://assets2.lottiefiles.com/packages/lf20_xyadoh9h.json"
+              background="transparent"
+              speed="1"
+              style="width: 100%; height: 200px"
+              loop
+              autoplay
+            ></lottie-player>
+            <h3>AI Voice Assistant</h3>
+            <p>
+              Get real-time answers to complex financial questions in multiple
+              languages.
+            </p>
+          </div>
+          <div class="feature-card left" id="micro-investment">
+            <div class="timeline-dot"></div>
+            <lottie-player
+              src="https://assets5.lottiefiles.com/packages/lf20_3rqwsqnj.json"
+              background="transparent"
+              speed="1"
+              style="width: 100%; height: 200px"
+              loop
+              autoplay
+            ></lottie-player>
+            <h3>Micro-Investment Options</h3>
+            <p>
+              Explore safe, accessible investment opportunities with small
+              starting capital.
+            </p>
+          </div>
+          <div class="feature-card right" id="budgeting">
+            <div class="timeline-dot"></div>
+            <lottie-player
+              src="https://assets8.lottiefiles.com/packages/lf20_jvfzjpmd.json"
+              background="transparent"
+              speed="1"
+              style="width: 100%; height: 200px"
+              loop
+              autoplay
+            ></lottie-player>
+            <h3>Budgeting Tools</h3>
+            <p>
+              Manage, track, and plan your finances with intuitive tools and
+              insights.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <h2>About Us</h2>
+        <p>
+          At AI Financial Advisor, we are passionate about bridging the
+          financial literacy gap in rural India. Our mission is to empower
+          individuals, especially women, with the knowledge and tools they need
+          to make informed financial decisions and secure their future.
+        </p>
+        <p>
+          Founded by a team of finance experts and AI enthusiasts, our platform
+          combines cutting-edge technology with deep understanding of rural
+          Indian needs. We believe that everyone deserves access to quality
+          financial advice, regardless of their location or background.
+        </p>
+        <p>
+          Our AI-powered system is designed to be intuitive, accessible, and
+          culturally sensitive. By offering services in multiple Indian
+          languages and incorporating voice commands, we ensure that even those
+          with limited literacy or tech-savviness can benefit from our platform.
+        </p>
+        <p>
+          Join us in our journey to revolutionize financial empowerment in rural
+          India. Together, we can build a future where financial freedom is a
+          reality for all.
+        </p>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+          <form>
+            <input type="text" placeholder="Name" required />
+            <input type="email" placeholder="Email" required />
+            <textarea placeholder="Message" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+          <div class="contact-info">
+            <h3>Get in Touch</h3>
+            <p>
+              We'd love to hear from you! Whether you have questions about our
+              services, want to partner with us, or simply want to learn more,
+              don't hesitate to reach out.
+            </p>
+            <p>Email: info@aifinancialadvisor.com</p>
+            <p>Phone: +91 123 456 7890</p>
+            <p>Address: 123 Tech Park, Bangalore, India</p>
+          </div>
+        </div>
+      </section>
+      <!-- <div id="google_element"></div>
+      <script src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+      <script>
+        function loadGoogleTranslate() {
+          new google.translate.TranslateElement("google_element");
+        }
+      </script> -->
+
+      <!-- Add this in the body of your HTML -->
+      <div
+        id="translate-container"
+        style="position: fixed; bottom: 20px; right: 20px; z-index: 9999"
+      >
+        <button
+          id="translate-button"
+          style="
+            padding: 10px;
+            background-color: #2d457e;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+          "
+        >
+          🌐 Translate
+        </button>
+
+        <!-- Scrollable Translate Dropdown -->
+        <div
+          id="translate-dropdown"
+          style="
+            display: none;
+            max-height: 300px;
+            overflow-y: scroll;
+            border: 1px solid #ccc;
+            background: #fff;
+            padding: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+          "
+        >
+          <div id="google_translate_element"></div>
+        </div>
+      </div>
+
+      <script>
+        // Toggle Translate Dropdown
+        document
+          .getElementById("translate-button")
+          .addEventListener("click", function () {
+            const dropdown = document.getElementById("translate-dropdown");
+            dropdown.style.display =
+              dropdown.style.display === "none" || dropdown.style.display === ""
+                ? "block"
+                : "none";
+          });
+
+        // Load Google Translate Script Dynamically
+        function loadGoogleTranslateScript() {
+          const script = document.createElement("script");
+          script.src =
+            "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+          script.type = "text/javascript";
+          document.body.appendChild(script);
+        }
+
+        // Initialize Google Translate Element
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement(
+            {
+              pageLanguage: "en", // Default page language
+              includedLanguages: `
+        as,bn,gu,hi,kn,ks,ml,mr,ne,or,pa,sd,ta,te,ur,sa,bo,mai,brx,sat,dz,doi,mni,kok,lus,kha,
+      en
+      `,
+              layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+            },
+            "google_translate_element"
+          );
+        }
+
+        // Load the Translate Script
+        loadGoogleTranslateScript();
+      </script>
+    </main>
+
+    <div id="languageModal" class="modal">
+      <div class="modal-content">
+        <h2>Select Your Language</h2>
+        <select id="languageSelect">
+          <option value="en-US">English</option>
+          <option value="hi-IN">Hindi</option>
+          <option value="es-ES">Spanish</option>
+        </select>
+        <button onclick="startVoiceRecognition()" id="startButton">
+          Start
+        </button>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        &copy; 2024 AI Financial Advisor for Rural India. All rights reserved.
+      </p>
+    </footer>
+  </body>
+  </html>
+  
+    <div class="chatbot-icon" id="chatbotIcon">
+      <img src="chatbot.jpg" alt="Chat with Prospera" />
+    </div>
+    <div class="chat-window" id="chatWindow">
+      <div class="chat-header">
+        <h3>Prospera</h3>
+        <button id="closeChat">X</button>
+      </div>
+      <div class="chat-body" id="chatBody">
+        <p>Hello! How can I assist you today?</p>
+      </div>
+      <input type="text" id="chatInput" placeholder="Type a message..." />
+    </div>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
