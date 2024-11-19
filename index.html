@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Prospera</title>
+    <title>Prospera - AI Financial Advisor for Rural India</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -13,18 +13,11 @@
       <nav>
         <div class="logo">Prospera</div>
         <div class="hamburger-menu">☰</div>
-
         <ul>
           <li><a href="#home" class="section">Home</a></li>
-          <li>
-            <a href="#features" class="section">Features</a>
-          </li>
-          <li>
-            <a href="#about" class="section">About Us</a>
-          </li>
-          <li>
-            <a href="#contact" class="section">Contact Us</a>
-          </li>
+          <li><a href="#features" class="section">Features</a></li>
+          <li><a href="#about" class="section">About Us</a></li>
+          <li><a href="#contact" class="section">Contact Us</a></li>
         </ul>
       </nav>
     </header>
@@ -34,11 +27,8 @@
         <button onclick="openLanguageModal()" style="margin-top: 20px">
           🎙️Start Voice Interaction
         </button>
-
         <h1 id="dynamic-title">Prospera</h1>
-        <p class="text">
-          Empowering rural India with AI-driven financial guidance
-        </p>
+        <p id="dynamic-text" class="text"></p>
       </section>
 
       <section id="features">
@@ -53,14 +43,23 @@
               speed="1"
               style="width: 100%; height: 200px"
               loop
-              autoplay
-            ></lottie-player>
+              autoplay></lottie-player>
             <h3>Voice Activation</h3>
             <p>
-              Control the entire platform through voice commands for easy access
-              and navigation.
+              For users with limited technical knowledge or disabilit Control
+              the platform seamlessly using voice commands, enabling hands-free
+              navigation.
             </p>
+            <div class="feature-description">
+              <p>
+                Voice Activation: Control the platform seamlessly using voice
+                commands, enabling hands-free navigation. Multilingual voice
+                support for users across different regions. Enhanced
+                accessibility.
+              </p>
+            </div>
           </div>
+
           <div class="feature-card right" id="community">
             <div class="timeline-dot"></div>
             <lottie-player
@@ -69,14 +68,25 @@
               speed="1"
               style="width: 100%; height: 200px"
               loop
-              autoplay
-            ></lottie-player>
+              autoplay></lottie-player>
             <h3>Community & Mentorship</h3>
             <p>
               Connect with mentors and access personalized financial guidance.
             </p>
+            <div class="feature-description">
+              <p>
+                Community & Mentorship: Connect with experienced mentors for
+                personalized financial advice tailored to your business goals.
+                Join a vibrant community of entrepreneurs and finance
+                professionals to share knowledge and insights. Access mentorship
+                programs that focus on growth strategies, investment planning,
+                and risk management. Participate in live Q&A sessions and group
+                discussions for collaborative learning.
+              </p>
+            </div>
           </div>
-          <div class="feature-card left" id="learning">
+
+          <div class="feature-card left" id="learning-platform">
             <div class="timeline-dot"></div>
             <lottie-player
               src="https://assets5.lottiefiles.com/packages/lf20_swnrn2oy.json"
@@ -84,15 +94,23 @@
               speed="1"
               style="width: 100%; height: 200px"
               loop
-              autoplay
-            ></lottie-player>
+              autoplay></lottie-player>
             <h3>Learning Platform</h3>
             <p>
-              Assess your financial knowledge and access tailored educational
-              content.
+              Take financial knowledge assessments and learn essential topics.
             </p>
+            <div class="feature-description">
+              <p>
+                Learning Platform: Take financial knowledge assessments to
+                identify strengths and areas for improvement. Get curated
+                educational content tailored to your skill level and business
+                stage. Learn essential topics such as budgeting, investment
+                planning, and tax management.
+              </p>
+            </div>
           </div>
-          <div class="feature-card right" id="news">
+
+          <div class="feature-card right" id="news-alerts">
             <div class="timeline-dot"></div>
             <lottie-player
               src="https://assets3.lottiefiles.com/packages/lf20_qmfs6c3i.json"
@@ -100,29 +118,45 @@
               speed="1"
               style="width: 100%; height: 200px"
               loop
-              autoplay
-            ></lottie-player>
+              autoplay></lottie-player>
             <h3>News & Alerts</h3>
-            <p>
-              Stay informed with tailored financial news and important alerts.
-            </p>
+            <p>Stay updated with the latest financial news and trends.</p>
+            <div class="feature-description">
+              <p>
+                News & Alerts: Stay updated with the latest financial news,
+                policies, and trends relevant to your industry. Receive
+                real-time alerts on stock market updates, investment
+                opportunities, and regulatory changes. Get personalized
+                notifications based on your business profile and financial
+                interests.
+              </p>
+            </div>
           </div>
-          <div class="feature-card left" id="entrepreneur">
+
+          <div class="feature-card left" id="entrepreneur-journey">
             <div class="timeline-dot"></div>
             <lottie-player
-              src="https://assets10.lottiefiles.com/packages/lf20_vvx2gjpt.json"
+              src="https://assets3.lottiefiles.com/packages/lf20_EyJRUV.json"
               background="transparent"
               speed="1"
               style="width: 100%; height: 200px"
-              loop
-              autoplay
-            ></lottie-player>
+              loop></lottie-player>
             <h3>Entrepreneur Journey</h3>
-            <p>
-              Follow a guided path to grow your business with gamified rewards.
-            </p>
+            <p>Follow a structured pathway for startup growth and scaling.</p>
+            <div class="feature-description">
+              <p>
+                Entrepreneur Journey: Follow a structured pathway designed to
+                help startups grow from ideation to scaling. Unlock achievements
+                and gamified rewards for completing milestones like setting
+                budgets or hitting revenue goals. Get actionable insights and
+                step-by-step guides for each stage of your entrepreneurial
+                journey. Track progress with detailed analytics and
+                recommendations for improvement.
+              </p>
+            </div>
           </div>
-          <div class="feature-card right" id="ai-assistant">
+
+          <div class="feature-card right" id="ai-voice-assistant">
             <div class="timeline-dot"></div>
             <lottie-player
               src="https://assets2.lottiefiles.com/packages/lf20_xyadoh9h.json"
@@ -130,14 +164,20 @@
               speed="1"
               style="width: 100%; height: 200px"
               loop
-              autoplay
-            ></lottie-player>
+              autoplay></lottie-player>
             <h3>AI Voice Assistant</h3>
-            <p>
-              Get real-time answers to complex financial questions in multiple
-              languages.
-            </p>
+            <p>Get instant answers to complex financial queries.</p>
+            <div class="feature-description">
+              <p>
+                AI Voice Assistant: Get instant answers to complex financial
+                queries in an easy-to-understand format. Supports multiple
+                languages for better accessibility and convenience. Provides
+                actionable insights, forecasts, and suggestions based on your
+                inputs.
+              </p>
+            </div>
           </div>
+
           <div class="feature-card left" id="micro-investment">
             <div class="timeline-dot"></div>
             <lottie-player
@@ -146,29 +186,40 @@
               speed="1"
               style="width: 100%; height: 200px"
               loop
-              autoplay
-            ></lottie-player>
+              autoplay></lottie-player>
             <h3>Micro-Investment Options</h3>
-            <p>
-              Explore safe, accessible investment opportunities with small
-              starting capital.
-            </p>
+            <p>Explore and track safe, minimal capital investments.</p>
+            <div class="feature-description">
+              <p>
+                Micro-Investment Options: Explore a variety of safe and reliable
+                investment opportunities with minimal initial capital. Track
+                investment growth and get recommendations to diversify your
+                portfolio. Educate users on risk and reward to make informed
+                decisions.
+              </p>
+            </div>
           </div>
-          <div class="feature-card right" id="budgeting">
+
+          <div class="feature-card right" id="budgeting-tools">
             <div class="timeline-dot"></div>
             <lottie-player
-              src="https://assets8.lottiefiles.com/packages/lf20_jvfzjpmd.json"
+              src="https://assets10.lottiefiles.com/packages/lf20_06a6pf9i.json"
               background="transparent"
               speed="1"
               style="width: 100%; height: 200px"
               loop
-              autoplay
-            ></lottie-player>
+              autoplay></lottie-player>
             <h3>Budgeting Tools</h3>
-            <p>
-              Manage, track, and plan your finances with intuitive tools and
-              insights.
-            </p>
+            <p>Easily track expenses, incomes, and set financial goals.</p>
+            <div class="feature-description">
+              <p>
+                Budgeting Tools: Easily track expenses, incomes, and cash flows
+                with user-friendly dashboards. Set financial goals and receive
+                actionable insights to achieve them. Generate automatic reports
+                and graphs to visualize your financial health. Receive reminders
+                and alerts for due payments, overspending, or financial gaps.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -176,27 +227,11 @@
       <section id="about">
         <h2>About Us</h2>
         <p>
-          At Prospera, we are passionate about bridging the
-          financial literacy gap in rural India. Our mission is to empower
-          individuals, especially women, with the knowledge and tools they need
-          to make informed financial decisions and secure their future.
-        </p>
-        <p>
-          Founded by a team of finance experts and AI enthusiasts, our platform
-          combines cutting-edge technology with deep understanding of rural
-          Indian needs. We believe that everyone deserves access to quality
-          financial advice, regardless of their location or background.
-        </p>
-        <p>
-          Our AI-powered system is designed to be intuitive, accessible, and
-          culturally sensitive. By offering services in multiple Indian
-          languages and incorporating voice commands, we ensure that even those
-          with limited literacy or tech-savviness can benefit from our platform.
-        </p>
-        <p>
-          Join us in our journey to revolutionize financial empowerment in rural
-          India. Together, we can build a future where financial freedom is a
-          reality for all.
+          <br>
+          At Prospera, we are passionate about bridging the financial literacy
+          gap in rural India. Our mission is to empower individuals, especially
+          women, with the knowledge and tools they need to make informed
+          financial decisions and secure their future.
         </p>
       </section>
 
@@ -218,20 +253,13 @@
             </p>
             <p>Email: info@prospera.com</p>
             <p>Phone: +91 123 456 7890</p>
-            <p>Address: 123 KKWIEER, Nashik, India</p>
+            <p>Address: 123 Tech Park, Bangalore, India</p>
           </div>
         </div>
       </section>
-      <!-- <div id="google_element"></div>
-      <script src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
-      <script>
-        function loadGoogleTranslate() {
-          new google.translate.TranslateElement("google_element");
-        }
-      </script> -->
+    </main>
 
-      <!-- Add this in the body of your HTML -->
-      <div
+    <div
         id="translate-container"
         style="position: fixed; bottom: 20px; right: 20px; z-index: 9999"
       >
@@ -308,28 +336,11 @@
       </script>
     </main>
 
-    <div id="languageModal" class="modal">
-      <div class="modal-content">
-        <h2>Select Your Language</h2>
-        <select id="languageSelect">
-          <option value="en-US">English</option>
-          <option value="hi-IN">Hindi</option>
-          <option value="es-ES">Spanish</option>
-        </select>
-        <button onclick="startVoiceRecognition()" id="startButton">
-          Start
-        </button>
-      </div>
-    </div>
 
     <footer>
-      <p>
-        &copy; 2024 AI Financial Advisor for Rural India. All rights reserved.
-      </p>
+      <p>&copy; 2024 Prospera. All rights reserved.</p>
     </footer>
-  </body>
-  </html>
-  
+
     <div class="chatbot-icon" id="chatbotIcon">
       <img src="chatbot.jpg" alt="Chat with Prospera" />
     </div>
@@ -343,7 +354,6 @@
       </div>
       <input type="text" id="chatInput" placeholder="Type a message..." />
     </div>
-
 
     <script src="script.js"></script>
   </body>
